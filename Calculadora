@@ -1,0 +1,62 @@
+import os
+limpar = lambda: os.system('clear')
+
+def somar_dois_numeros():
+  numero1 = int(input('Digite o primeiro valor: '))
+  numero2 = int(input('Digite o Segundo valor: '))
+  resultado = numero1 + numero2
+  print(f' A soma entre o {numero1} e {numero2} é {resultado}.')
+  input('Pressione Enter para continuar...')
+  limpar()
+
+def subtrair_dois_numeros():
+  numero1 = int(input('Digite o primeiro valor: '))
+  numero2 = int(input('Digite o segundo valor: '))
+  resultado = numero1 - numero2
+  print(f' A subtração entre o {numero1} e {numero2} é {resultado}.')
+  input('Pressione Enter para continuar...')
+  limpar()
+  
+def multiplicar_dois_numeros():
+  numero1 = int(input('Digite o primeiro valor: '))
+  numero2 = int(input('Digite o segundo valor: '))
+  resultado = numero1 * numero2
+  print(f' A multiplicação entre o {numero1} e {numero2} é {resultado}.')
+  input('Pressione Enter para continuar...')
+  limpar()
+
+def dividir_dois_numeros():
+  numero1 = int(input('Digite o primeiro número: '))
+  numero2 = int(input('Digite o segundo número: '))
+  resultado = numero1 / numero2
+  print(f' A divisão entre o número {numero1} e {numero2} é {resultado}')
+  input('Pressione Enter para continuar...')
+  limpar()
+def menu():
+  print('Olá, seja muito bem vindo!')
+  print()
+  print('Selecione a opção desejada:')
+  print('1. Somar')
+  print('2. Subtrair')
+  print('3. Multiplicar')
+  print('4. Dividir')
+  print('5. Sair.')
+  opcao = input('==> ')
+
+  if opcao in ('1','2','3','4','5'):
+    if opcao == '1':
+      somar_dois_numeros()
+      menu()
+    elif opcao == '2':
+      subtrair_dois_numeros()
+      menu()
+    elif opcao == '3':
+      multiplicar_dois_numeros()
+      menu()
+    elif opcao == '4':
+      dividir_dois_numeros()
+      menu()
+    elif opcao == '5':
+      exit(0)
+
+menu()
