@@ -32,6 +32,7 @@ def dividir_dois_numeros():
   print(f' A divisão entre o número {numero1} e {numero2} é {resultado}')
   input('Pressione Enter para continuar...')
   limpar()
+  
 def menu():
   print('Olá, seja muito bem vindo!')
   print()
